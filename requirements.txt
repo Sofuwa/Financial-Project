@@ -3,3 +3,4 @@ yahoo-fin==0.8.9.1
 numerize==0.12
 streamlit-nested-layout==0.1.1
 plotly==5.6.0
+ta==0.10.2
