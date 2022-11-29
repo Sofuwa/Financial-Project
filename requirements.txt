@@ -1,1 +1,2 @@
 yfinance==0.1.75
+yahoo-fin==0.8.9.1
