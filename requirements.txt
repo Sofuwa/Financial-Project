@@ -5,3 +5,4 @@ streamlit-nested-layout==0.1.1
 plotly==5.6.0
 ta==0.10.2
 matplotlib==3.5.1
+pandas-datareader==0.10.0
