@@ -26,6 +26,9 @@ def Summary(tabs, single_ticker, ticker_selected, ticker_list):
             col1_df = col1_df.set_index('Stat')
             st.write("")
             st.write("")
+            st.write("")
+            st.write("")
+            st.write("")
             st.dataframe(col1_df, width = 250)
             
         with col2:
@@ -38,6 +41,7 @@ def Summary(tabs, single_ticker, ticker_selected, ticker_list):
             col2_df = pd.DataFrame(data = col2_stat, columns=["Stat","Value"])
             col2_df = col2_df.replace({'Values':{'N/A (N/A)':'N/A', np.nan:'N/A','nan':'N/A'}})
             col2_df = col2_df.set_index('Stat')
+            st.write("")
             st.write("")
             st.write("")
             st.write("")
