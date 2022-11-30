@@ -55,7 +55,7 @@ def News(tabs,ticker_selected):
               news_publisher.append('N/A')
               news_time.append('N/A')
               news_image.append('N/A')
-              news_article.append('N/A')
+              news_article.append('')
                 
         st.header('Recent News')
     
