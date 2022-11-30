@@ -40,6 +40,8 @@ def Summary(tabs, single_ticker, ticker_selected, ticker_list):
             col2_df = col2_df.set_index('Stat')
             st.write("")
             st.write("")
+            st.write("")
+            st.write("")
             st.dataframe(col2_df, width = 350)
         
         with col3:
