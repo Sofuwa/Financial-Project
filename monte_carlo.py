@@ -126,7 +126,7 @@ def Montecarlo(tabs,single_ticker,ticker_selected):
                 #print('VaR at 95% confidence interval is: ' + str(np.round(VaR, 2)) + ' USD')
                 
         # Initiate
-        mc_sim = MonteCarlo(ticker=single_ticker, data_source='yahoo',
+        mc_sim = MonteCarlo(ticker=single_ticker,
                             start_date=str(mc_start_date), end_date=str(mc_end_date),
                             time_horizon=selected_horizon, n_simulation=selected_sim, seed=241)
         # Get data
