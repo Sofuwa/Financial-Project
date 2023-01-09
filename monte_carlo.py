@@ -10,6 +10,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import datetime as dt
 import pandas_datareader.data as web
+from pandas_datareader import data as pdr
+import yfinance as yf
+yf.pdr_override()
 from dateutil.relativedelta import relativedelta
 import streamlit as st
 
