@@ -29,11 +29,11 @@ def Montecarlo(tabs,single_ticker,ticker_selected):
         class MonteCarlo(object):
             mc_start = str(dt.date.today()-relativedelta(years=1))
             mc_end = str(dt.date.today())
-            def __init__(self, ticker, data_source, seed, start_date=mc_start, end_date=mc_end, time_horizon=30, n_simulation=200):
+            def __init__(self, ticker, seed, start_date=mc_start, end_date=mc_end, time_horizon=30, n_simulation=200):
                 
                 # Initiate class variables
                 self.ticker = ticker  # Stock ticker
-                self.data_source = data_source  # Source of data, e.g. 'yahoo'
+                # self.data_source = data_source  # Source of data, e.g. 'yahoo'
                 self.start_date = dt.datetime.strptime(start_date, '%Y-%m-%d')  # Text, YYYY-MM-DD
                 self.end_date = dt.datetime.strptime(end_date, '%Y-%m-%d')  # Text, YYYY-MM-DD
                 self.time_horizon = time_horizon  # Days
@@ -42,7 +42,7 @@ def Montecarlo(tabs,single_ticker,ticker_selected):
                 self.simulation_df = pd.DataFrame()  # Table of results
                 
                 # Extract stock data
-                self.stock_price = web.DataReader(ticker, data_source, self.start_date, self.end_date)
+                self.stock_price = pdr.get_data_yahoo(ticker, self.start_date, self.end_date)
                 
                 # Calculate financial metrics
                 # Daily return (of close price)
