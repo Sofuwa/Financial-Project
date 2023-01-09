@@ -83,7 +83,7 @@ with col3:
 tabs_list = ["Company Profile", "Summary", "Chart", "Statistics", "Historical Data", "Financials", "Analysis", "Holders", "Investor's Corner", "News"]    
 tabs = st.tabs(tabs_list)
 
-company.Company(ticker_selected, tabs)
+company.Company(single_ticker, ticker_selected, tabs)
 summary.Summary(tabs, single_ticker, ticker_selected, ticker_list)
 chart.Charts(tabs,ticker_list,ticker_selected)
 analysis.Stocks(tabs,single_ticker)
