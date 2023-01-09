@@ -7,3 +7,4 @@ ta==0.10.2
 matplotlib==3.5.1
 pandas-datareader==0.10.0
 timeago==1.0.16
+yahooquery==2.2.15
